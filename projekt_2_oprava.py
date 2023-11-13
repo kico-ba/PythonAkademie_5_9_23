@@ -32,7 +32,7 @@ def write_score():
             txt_file.write(f"{player_name} - {guesses} guesses and {elapsed_time} sec\n")
 
 # auto-generated 4-digit number. Not starting with zero and not repetitive digits
-generated_number = ''.join(map(str, random.sample(range(1, 10), 4)))
+generated_number = str(random.randint(1000, 9999))
 # print(generated_number) 
 
 # convert to list
